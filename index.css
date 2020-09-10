@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&family=Roboto&display=swap');
+* {
+  box-sizing: border-box;
+}
+html, body {
+  margin: 0px;
+  padding: 0px;
+  font-size: 18px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+nav, div, main, footer {
+  display: flex;
+  flex-direction: row;
+  padding: 0.5em
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+.logotext {
+  font-family: 'Poppins', sans-serif;
+}
+.logoimage {
+  max-height: 40vh;
+}
+
+
+em {
+  font-style: normal;
+  font-weight: 900;
+  font-family: 'Poppins', sans-serif;
+}
+
+nav {
+  min-height: 60px;
+  justify-content: flex-end;
+  min-height: 6em;
+}
+
+footer {
+  background-color: #3772FF;
+  color: #FFF;
+}
+
+.heroContent {
+  text-align: center;
+  flex-direction: column;
+  flex: 1;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+}
+
+.heroContent > h1 {
+  font-size: 7vw;
+}
+
+main {
+  justify-content: space-around;
+  flex: 1;
+  background-image: url(./img/random_boxes_postgres.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.notificationBox {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  width: 80%;
+  border-radius: 4px;
+  box-shadow: rgba(0,0,0, 7%) 0px 5px 15px;
+  font-weight: 600;
+  background: rgba(255,255,255, 0.5)
+}
+
+#mc_embed_signup {
+  flex: 1;
+}
+
+form {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.btn {
+  text-decoration: none;
+  background-color: #3772FF;
+  border: none;
+  color: #FFF;
+  display: block;
+  font-weight: bold;
+  padding: 0px 1em;
+  height: 2em;
+  line-height: 2em;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+input[type="email"] {
+  padding: 1em;
+  border-radius: 3em;
+  width: 100%;
+  text-align: center;
+}
+.heroLeft {
+  background-color: white;
+}
+@media only screen and (max-width: 1000px) {
+  main {
+    flex-direction: column;
+  }
+}
